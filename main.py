@@ -14,7 +14,7 @@ database_key = os.environ.get('DATABASE_KEY')  # should be your Supabase anon or
 supabase: Client = create_client(database_url, database_key)
 
 # === PUBLIC AQI API KEY ===
-API_KEY = "8c773b99-c832-49fd-b0c7-59db4ae8261d"#os.environ.get('PUBLIC_AQI_API_KEY')
+API_KEY = os.environ.get('PUBLIC_AQI_API_KEY')
 
 app = FastAPI()
 
